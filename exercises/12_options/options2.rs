@@ -30,6 +30,7 @@ mod tests {
         // adds another layer of `Option`. You can do nested pattern matching
         // in if-let and while-let statements.
         while let integer = optional_integers.pop() {
+            
             assert_eq!(integer, cursor);
             cursor -= 1;
         }
